@@ -45,7 +45,7 @@ const AppointmentPage = () => {
       appointmentSchema.parse(appointmentData);
 
       // ✅ Send data to server
-      await axios.post("http://localhost:4000/Appointment/Save", appointmentData);
+      await axios.post("https://pawconnect1.onrender.com/Appointment/Save", appointmentData);
 
       alert(`Appointment for ${ownerName} has been booked!`);
 

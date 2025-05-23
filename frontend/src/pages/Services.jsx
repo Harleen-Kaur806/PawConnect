@@ -7,7 +7,7 @@ const ServicesPage = () => {
   // Fetch data from the backend
   useEffect(() => {
     // Replace with your actual backend API URL
-    fetch("http://localhost:4000/Service/Get")
+    fetch("https://pawconnect1.onrender.com/Service/Get")
       .then((response) => response.json())
       .then((data) => setServices(data.data))
       .catch((error) => console.error("Error fetching services:", error));

@@ -138,7 +138,7 @@ const handleSubmit = async (e) => {
     submitData.append('sellerInfolocation', formData.sellerInfo.location);
 
     // Submit the form data to backend
-    const response = await fetch('http://localhost:4000/SellPet/save', {
+    const response = await fetch('https://pawconnect1.onrender.com/SellPet/save', {
       method: 'POST',
       body: submitData,
     });
