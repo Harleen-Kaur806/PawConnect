@@ -22,7 +22,7 @@ const PetProductsPage = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("https://pawconnect1.onrender.com/product/Get");
+      const response = await axios.get("https://pawconnect1.onrender.com/Product/Get");
       if (Array.isArray(response.data.data)) {
         setProducts(response.data.data);
       }

@@ -27,7 +27,7 @@ dotenv.config();
 // Middleware setup
 app.use(express.static("public"));
 app.use(fileuploader());
- app.use(cors({   origin:['pawconnect1.netlify.app','http://localhost:5173']  
+ app.use(cors({   origin:['https://pawconnect1.netlify.app','http://localhost:5173']  
 }));
 app.use(express.json());
 
